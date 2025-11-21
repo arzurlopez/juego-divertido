@@ -11,10 +11,18 @@ import Game from './scenes/Game';
 const config = {
   type: Phaser.AUTO,
   backgroundColor: "#333",
-
   width: 800,
   height: 600,
-  scene: [Portada, Game, GameOver,Instrucciones] // Aquí registras la escena
+physics: {
+    default: "arcade",
+    arcade: {
+      gravity: { y: 300 },
+      debug: false
+    }
+  },
+
+
+  scene: [Game, Portada, GameOver,Instrucciones] // Aquí registras la escena
 
 }
 const game = new Phaser.Game(config);

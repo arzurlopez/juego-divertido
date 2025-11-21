@@ -9,6 +9,6 @@ body{
 }
 canvas{
   display:block;
-  margin:1em,auto;
+  margin:1em auto;
   overflow: hidden;
 }
